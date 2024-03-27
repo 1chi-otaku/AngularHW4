@@ -1,0 +1,9 @@
+
+
+<h2>{{product.name}}</h2>
+<p>{{product.price}}$</p>
+<p>Quantity - {{product.quantity}}</p>
+
+
+<button (click)="onChanged.emit(1)">+</button>
+<button (click)="onChanged.emit(-1)">-</button>

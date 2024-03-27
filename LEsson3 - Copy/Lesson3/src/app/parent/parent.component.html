@@ -1,0 +1,12 @@
+
+<app-child [price]="price" [kol]="kol" ></app-child>
+
+<h1>Продукция магазина</h1>
+<p>описание условий акции</p>
+<h2>Clicks: {{clicks}}</h2>
+<h2>Total Summ: {{total}}</h2>
+<div *ngFor="let product of products; let ind = index">
+  <app-child [product]="product" [price]="product.price" [kol]="1" 
+  (onChanged)="onChanged($event)"></app-child>
+
+</div>

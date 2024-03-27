@@ -1,0 +1,26 @@
+
+<input type="color" [(ngModel)] = "selectedColour">
+
+<select name="" id="" [(ngModel)] = "selectedFontSize">
+    <option value ="12">12</option>
+    <option value ="14">14</option>
+    <option value ="16">16</option>
+    <option value ="18">18</option>
+</select>
+
+<p>{{selectedColour}}</p>
+<p>{{selectedFontSize}}</p>
+
+<p [ngStyle]="{
+    'font-size': selectedFontSize + 'px',
+    'color': selectedColour
+}">Hello,world!</p>
+
+
+
+<br>
+
+
+
+
+<!--Список. форма для добавления новых. Инпут и кнопка плюсик Привязать к массиву и при нажатии кнопки добавлять элементы-->
